@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter and Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Filter and Upload</h1>
+        <input type="file" id="fileInput" accept="image/*" />
+        <img id="image" src="" alt="" />
+        <canvas id="canvas"></canvas>
+        <div>
+            <button onclick="applyGrayscale()">Apply Grayscale</button>
+            <button onclick="resetFilters()">Reset Filters</button>
+            <button onclick="downloadImage()">Download Image</button>
+        </div>
+        <div class="slider">
+            <label for="saturationRange">Saturation:</label>
+            <input type="range" id="saturationRange" min="0" max="200" value="100" />
+            <span id="saturationValue">100%</span>
+        </div>
+        <div class="slider">
+            <label for="brightnessRange">Brightness:</label>
+            <input type="range" id="brightnessRange" min="0" max="200" value="100" />
+            <span id="brightnessValue">100%</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

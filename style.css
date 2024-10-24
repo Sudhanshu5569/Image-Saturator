@@ -1,0 +1,54 @@
+body {
+    background-color: #ebebeb;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 35rem;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: center;
+}
+
+#image {
+    width: 100%;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
+
+#canvas {
+    display: none;
+}
+
+.container button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #333;
+}
+
+.slider {
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.slider label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.slider input {
+    width: 100%;
+}
